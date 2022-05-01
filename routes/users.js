@@ -3,7 +3,7 @@ const router = express.Router();
 const fs = require("fs");
 
 // Function to read JSON file
-function readJson(filePath, cb) {
+const readJson = (filePath, cb) => {
   fs.readFile(filePath, "utf-8", (err, data) => {
     if (err) {
       return cb && cb(err);
@@ -17,11 +17,14 @@ function readJson(filePath, cb) {
   });
 }
 
+// Thihs is to match the date formate in the challenge details
+const formatedDate = (date) => date.split(".")[0] + "Z";
+
 // Add 1 day to date
-function addDay(date) {
+const addDay = (date) => {
   let result = new Date(date);
   result.setDate(result.getDate() + 1);
-  return result.toISOString().split(".")[0] + "Z";
+  return formatedDate(result.toISOString());
 }
 
 // Get User
@@ -36,8 +39,8 @@ router.get("/:id/rewards", (req, res) => {
 
   for (let i = 0; i < 7; i++) {
     week.push(
-      new Date(rewardDate.setUTCHours(0, 0, 0)).toISOString().split(".")[0] +
-        "Z"
+      formatedDate(new Date(rewardDate.setUTCHours(0, 0, 0)).toISOString())
+      // new Date(rewardDate.setUTCHours(0, 0, 0)).toISOString()
     );
     rewardDate.setDate(rewardDate.getDate() + 1);
   }
@@ -48,7 +51,7 @@ router.get("/:id/rewards", (req, res) => {
       console.log(err);
     } else {
       if (data.users[userId]) {
-        res.json({
+        res.status(200).json({
           data: data.users[userId].rewards.filter((reward) =>
             week.includes(reward.availableAt)
           ),
@@ -81,12 +84,51 @@ router.get("/:id/rewards", (req, res) => {
             if (err) {
               console.log(err);
             } else {
-              console.log("User created");
               const newUserRewards = newUser[userId].rewards;
-              res.json({ data: newUserRewards });
+              res.status(200).json({ data: newUserRewards });
             }
           }
         );
+      }
+    }
+  });
+});
+
+// Redeem Reward
+router.patch("/:id/rewards/:rewardId/redeem", (req, res) => {
+  const userId = req.params.id;
+  const rewardId = req.params.rewardId;
+
+  // Read JSON file and redeem reward
+  readJson("./users.json", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      // Make sure user exists
+      if (data.users[userId]) {
+        const userRewards = data.users[userId].rewards;
+        const reward = userRewards.find(
+          (reward) => reward.availableAt === rewardId
+        );
+        const hasNotExpired = new Date(reward.expiresAt) >= new Date();
+        const isNotRedeemed = reward.redeemedAt === null;
+
+        // If all conditions are met, redeem reward
+        if (reward && hasNotExpired && isNotRedeemed) {
+          reward.redeemedAt = formatedDate(new Date().toISOString());
+          // Write data to file and return redeemed reward
+          fs.writeFile("./users.json", JSON.stringify(data, null, 2), (err) => {
+            if (err) {
+              console.log(err);
+            } else {
+              res.status(200).json({ data: reward });
+            }
+          });
+        } else {
+          res.status(404).json({ message: "This reward is already expired" });
+        }
+      } else {
+        res.status(404).json({ message: "User not found" });
       }
     }
   });

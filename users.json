@@ -53,7 +53,7 @@
       "rewards": [
         {
           "availableAt": "2020-03-15T00:00:00Z",
-          "redeemedAt": null,
+          "redeemedAt": "2022-05-01T22:26:27Z",
           "expiresAt": "2020-03-16T00:00:00Z"
         },
         {
@@ -88,42 +88,198 @@
         }
       ]
     },
+    "7": {
+      "rewards": [
+        {
+          "availableAt": "2022-04-25T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-04-26T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-04-26T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-04-27T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-04-27T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-04-28T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-04-28T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-04-29T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-04-29T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-04-30T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-04-30T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-01T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-01T00:00:00Z",
+          "redeemedAt": "2022-05-01T22:34:24Z",
+          "expiresAt": "2022-05-02T00:00:00Z"
+        }
+      ]
+    },
+    "8": {
+      "rewards": [
+        {
+          "availableAt": "2022-05-02T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-03T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-03T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-04T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-04T00:00:00Z",
+          "redeemedAt": "2022-05-01T22:45:34Z",
+          "expiresAt": "2022-05-05T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-05T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-06T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-06T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-07T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-07T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-08T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-08T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-09T00:00:00Z"
+        }
+      ]
+    },
+    "9": {
+      "rewards": [
+        {
+          "availableAt": "2022-05-02T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-03T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-03T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-04T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-04T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-05T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-05T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-06T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-06T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-07T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-07T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-08T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-08T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-09T00:00:00Z"
+        }
+      ]
+    },
     "10": {
       "rewards": [
         {
-          "availableAt": "2020-03-15T00:00:00Z",
+          "availableAt": "2022-05-30T00:00:00Z",
           "redeemedAt": null,
-          "expiresAt": "2020-03-16T00:00:00Z"
+          "expiresAt": "2022-05-31T00:00:00Z"
         },
         {
-          "availableAt": "2020-03-16T00:00:00Z",
+          "availableAt": "2022-05-31T00:00:00Z",
           "redeemedAt": null,
-          "expiresAt": "2020-03-17T00:00:00Z"
+          "expiresAt": "2022-06-01T00:00:00Z"
         },
         {
-          "availableAt": "2020-03-17T00:00:00Z",
+          "availableAt": "2022-06-01T00:00:00Z",
           "redeemedAt": null,
-          "expiresAt": "2020-03-18T00:00:00Z"
+          "expiresAt": "2022-06-02T00:00:00Z"
         },
         {
-          "availableAt": "2020-03-18T00:00:00Z",
+          "availableAt": "2022-06-02T00:00:00Z",
           "redeemedAt": null,
-          "expiresAt": "2020-03-19T00:00:00Z"
+          "expiresAt": "2022-06-03T00:00:00Z"
         },
         {
-          "availableAt": "2020-03-19T00:00:00Z",
+          "availableAt": "2022-06-03T00:00:00Z",
           "redeemedAt": null,
-          "expiresAt": "2020-03-20T00:00:00Z"
+          "expiresAt": "2022-06-04T00:00:00Z"
         },
         {
-          "availableAt": "2020-03-20T00:00:00Z",
+          "availableAt": "2022-06-04T00:00:00Z",
           "redeemedAt": null,
-          "expiresAt": "2020-03-21T00:00:00Z"
+          "expiresAt": "2022-06-05T00:00:00Z"
         },
         {
-          "availableAt": "2020-03-21T00:00:00Z",
+          "availableAt": "2022-06-05T00:00:00Z",
           "redeemedAt": null,
-          "expiresAt": "2020-03-22T00:00:00Z"
+          "expiresAt": "2022-06-06T00:00:00Z"
+        }
+      ]
+    },
+    "11": {
+      "rewards": [
+        {
+          "availableAt": "2022-05-30T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-05-31T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-05-31T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-06-01T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-06-01T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-06-02T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-06-02T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-06-03T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-06-03T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-06-04T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-06-04T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-06-05T00:00:00Z"
+        },
+        {
+          "availableAt": "2022-06-05T00:00:00Z",
+          "redeemedAt": null,
+          "expiresAt": "2022-06-06T00:00:00Z"
         }
       ]
     }
