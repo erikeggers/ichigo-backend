@@ -4,7 +4,7 @@ const app = express();
 
 // Routes
 app.get('/', (req, res) => {
-  res.send('Hello World!!');
+  res.send('Hello Ichigo!!');
 });
 
 const userRouter = require('./routes/users');
